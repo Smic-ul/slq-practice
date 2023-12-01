@@ -1,0 +1,40 @@
+-- 1. Select all columns from a table
+SELECT * FROM your_table_name;
+
+-- 2. Select specific columns with conditions
+SELECT column1, column2 FROM your_table_name WHERE condition;
+
+-- 3. Filter data using WHERE clause
+SELECT * FROM your_table_name WHERE column_name = 'value';
+
+-- 4. Join two tables
+SELECT t1.column1, t2.column2 
+FROM table1 t1
+INNER JOIN table2 t2 ON t1.common_column = t2.common_column;
+
+-- 5. Aggregate functions (e.g., COUNT, SUM, AVG)
+SELECT COUNT(column_name) AS total_count, AVG(another_column) AS average_value
+FROM your_table_name
+WHERE condition;
+
+-- 6. Group by and HAVING clause
+SELECT column_name, COUNT(*) AS count
+FROM your_table_name
+GROUP BY column_name
+HAVING COUNT(*) > 1;
+
+-- 7. Order by with sorting
+SELECT * FROM your_table_name
+ORDER BY column_name DESC; -- or ASC for ascending order
+
+-- 8. Insert data into a table
+INSERT INTO your_table_name (column1, column2) VALUES ('value1', 'value2');
+
+-- 9. Update data in a table
+UPDATE your_table_name
+SET column_name = 'new_value'
+WHERE condition;
+
+-- 10. Delete rows from a table
+DELETE FROM your_table_name
+WHERE condition;
