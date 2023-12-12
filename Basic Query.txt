@@ -24,14 +24,14 @@ GROUP BY column_name
 HAVING COUNT(*) > 1;
 
 7. Order by with sorting
-SELECT * FROM your_table_name
+SELECT * FROM my_table_name
 ORDER BY column_name DESC; -- or ASC for ascending order
 
 8. Insert data into a table
-INSERT INTO your_table_name (column1, column2) VALUES ('value1', 'value2');
+INSERT INTO my_table_name (column1, column2) VALUES ('value1', 'value2');
 
 9. Update data in a table
-UPDATE your_table_name
+UPDATE my_table_name
 SET column_name = 'new_value'
 WHERE condition;
 
